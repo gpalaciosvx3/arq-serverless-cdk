@@ -1,0 +1,9 @@
+node_modules/
+dist/
+coverage/
+*.lcov
+.nyc_output/
+*.log
+.env
+cdk/cdk.out/
+cdk/dist/
