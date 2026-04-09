@@ -1,13 +1,12 @@
 {
-  "name": "{{project-name}}",
+  "name": "arq-serverless-cdk",
   "version": "1.0.0",
-  "description": "{{project-description}}",
+  "description": "Arquitectura Serverless con CDK",
   "scripts": {
     "build": "tsc --noEmit",
-    "typecheck": "tsc --noEmit",
     "test": "jest",
     "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage"
+    "local:ping": "ts-node local-test/ping.runner.ts"
   },
   "dependencies": {
     "@nestjs/common": "^10.4.0",
