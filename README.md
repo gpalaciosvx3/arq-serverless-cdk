@@ -127,7 +127,6 @@ CDK_STAGE=dev cdk destroy
 
 | Archivo | Trigger | Acción |
 |---|---|---|
-| `local.yml` | `push` a `local` | Deploy en LocalStack |
 | `dev.yml` | `push` a `develop` | Deploy en AWS DEV |
 | `qa.yml` | `push` a `release` | Deploy en AWS QA |
 | `prd.yml` | `push` a `master` | Deploy en AWS PRD |
@@ -144,10 +143,3 @@ AWS_SECRET_ACCESS_KEY
 CDK_DEFAULT_ACCOUNT
 AWS_DEFAULT_REGION
 ```
-
-**`deployer-local`:**
-```
-LOCALSTACK_AUTH_TOKEN
-```
-
----
