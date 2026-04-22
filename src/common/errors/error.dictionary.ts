@@ -24,4 +24,10 @@ export class ErrorDictionary {
     descripcion: 'El cuerpo de la solicitud no es válido',
     statusCode: HttpStatus.BAD_REQUEST,
   };
+
+  static readonly DYNAMO_UNAVAILABLE: InputError = {
+    code: 'APP-004',
+    descripcion: 'Servicio de base de datos DynamoDB no disponible',
+    statusCode: HttpStatus.SERVICE_UNAVAILABLE,
+  };
 }

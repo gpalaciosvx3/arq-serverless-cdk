@@ -1,7 +1,8 @@
-Feature: Ping
+# language: es
+Característica: Ping
 
-  Scenario: El endpoint de ping retorna pong con timestamp
-    Given el servicio está disponible
-    When se ejecuta el caso de uso ping
-    Then la respuesta tiene message "pong"
-    And la respuesta tiene un timestamp
+  Escenario: El endpoint de ping retorna pong con timestamp
+    Dado el servicio está disponible
+    Cuando se ejecuta el caso de uso ping
+    Entonces la respuesta tiene message "pong"
+    Y la respuesta tiene un timestamp

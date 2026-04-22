@@ -1,11 +1,11 @@
 import 'reflect-metadata';
 import { loadFeature, defineFeature } from 'jest-cucumber';
-import { PingService } from '../../../src/ping/domain/service/ping.service';
-import { PingUseCase } from '../../../src/ping/application/use-cases/ping.usecase';
-import { PingRepositoryImpl } from '../../../src/ping/infrastructure/repository/ping.repository.impl';
-import { PingResult } from '../../../src/ping/domain/types/ping-result.type';
+import { PingService } from '../../src/ping/domain/service/ping.service';
+import { PingUseCase } from '../../src/ping/application/use-cases/ping.usecase';
+import { PingRepositoryImpl } from '../../src/ping/infrastructure/repository/ping.repository.impl';
+import { PingResult } from '../../src/ping/domain/types/ping-result.type';
 
-const feature = loadFeature('./test/modules/ping/features/ping.feature');
+const feature = loadFeature('./test/ping/features/ping.feature');
 
 defineFeature(feature, test => {
   test('El endpoint de ping retorna pong con timestamp', ({ given, when, then, and }) => {
